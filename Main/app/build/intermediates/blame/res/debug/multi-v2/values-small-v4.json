@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\nehaa\\Documents\\GitHub\\xSplitter-Beta\\Main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "E:\\xplitter\\Main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nehaa\\.gradle\\caches\\transforms-2\\files-2.1\\d50176498dbfd62a728d0145fbe77ad7\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

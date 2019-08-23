@@ -856,6 +856,7 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="ghost_view" type="id"/>
+    <item name="glide_custom_view_target_tag" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
@@ -978,7 +979,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="confirm_password">Confirm password</string>
-    <string name="default_web_client_id" translatable="false">627422809114-317nlnr6eqta128pei6ridsfaa4tgvgj.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">152154774948-84v9sj9g3njc7lj45me1p5iuvaeqo786.apps.googleusercontent.com</string>
     <string name="divider">divider</string>
     <string name="email_hint">Enter your e-mail</string>
     <string name="enter_password">Enter password</string>
@@ -988,14 +989,14 @@
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="firebase_database_url" translatable="false">https://xplitter-5c808.firebaseio.com</string>
+    <string name="firebase_database_url" translatable="false">https://nehaxplitter-beta.firebaseio.com</string>
     <string name="forgot_password_hint">Forgot Password?</string>
     <string name="friend_name">Friend name</string>
-    <string name="gcm_defaultSenderId" translatable="false">627422809114</string>
-    <string name="google_api_key" translatable="false">AIzaSyDdJ4kPLgF5me4Xllc87A8dhwSDeAsT07M</string>
-    <string name="google_app_id" translatable="false">1:627422809114:android:6d90638cdd04bea9</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDdJ4kPLgF5me4Xllc87A8dhwSDeAsT07M</string>
-    <string name="google_storage_bucket" translatable="false">xplitter-5c808.appspot.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">152154774948</string>
+    <string name="google_api_key" translatable="false">AIzaSyCshl5kOJvlYEhjwAGQkq7RHpPTcJgQUOk</string>
+    <string name="google_app_id" translatable="false">1:152154774948:android:6d90638cdd04bea9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCshl5kOJvlYEhjwAGQkq7RHpPTcJgQUOk</string>
+    <string name="google_storage_bucket" translatable="false">nehaxplitter-beta.appspot.com</string>
     <string name="group_name">Group name</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
@@ -1032,7 +1033,7 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="profile_name">Profile name</string>
-    <string name="project_id" translatable="false">xplitter-5c808</string>
+    <string name="project_id" translatable="false">nehaxplitter-beta</string>
     <string name="save">Save</string>
     <string name="search">Search Group, Event or Transaction</string>
     <string name="search_menu_title">Search</string>
