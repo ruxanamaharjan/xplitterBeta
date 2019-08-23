@@ -30,17 +30,17 @@ import java.util.regex.Pattern;
 
 
 public class SignupActivity extends AppCompatActivity  {
-    public EditText editTextEmail;
-    public EditText editTextUsername;
-    public EditText editTextPassword;
-    public EditText editTextConfirmPassword;
-    public Button buttonSignUp;
-    public Button buttonSignUpGmail;
-    public ProgressDialog progressDialog;
-    public FirebaseAuth mAuth;
-    public DatabaseReference databaseReference;
-    public FirebaseUser currentUser;
-    public String userID;
+    private EditText editTextEmail;
+    private EditText editTextUsername;
+    private EditText editTextPassword;
+    private EditText editTextConfirmPassword;
+    private Button buttonSignUp;
+    private Button buttonSignUpGmail;
+    private ProgressDialog progressDialog;
+    private FirebaseAuth mAuth;
+    private DatabaseReference databaseReference;
+    private FirebaseUser currentUser;
+    private String userID;
     Query usernameQuery;
 
 

@@ -1,6 +1,8 @@
 package com.example.x_splitter;
 
-public class GroupInfo {
+import java.io.Serializable;
+
+public class GroupInfo implements Serializable {
     String ID;
     String GroupName;
 

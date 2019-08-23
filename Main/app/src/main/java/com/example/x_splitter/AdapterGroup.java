@@ -21,6 +21,7 @@ public class AdapterGroup extends RecyclerView.Adapter<AdapterGroup.GroupMyViewH
     private Context context;
     private ArrayList<ModelGroup> data = new ArrayList<>();
     private ArrayList<ModelGroup> dataFiltered = new ArrayList<>();
+    public static String grpName = null;
 
     public AdapterGroup(Context context, ArrayList<ModelGroup> data) {
 
@@ -66,6 +67,7 @@ public class AdapterGroup extends RecyclerView.Adapter<AdapterGroup.GroupMyViewH
 //                String currentGroupID = mg.getInGroup_id();
 //                System.out.println("Srij:" + currentGroupID);
 
+                grpName=currentGroupName;
                 Context context = view.getContext();
                 Intent intent = new Intent(context,Group_event_member.class);
                 Intent intent1 = new Intent(context,FragmentEvent.class);

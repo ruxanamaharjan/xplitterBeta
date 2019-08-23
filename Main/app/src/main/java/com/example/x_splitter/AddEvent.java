@@ -119,11 +119,6 @@ public class AddEvent extends AppCompatActivity {
                             }
                         }
                     });
-            TransactionInfo transactionInfo3 = new TransactionInfo(amountToPay, amountToGet, amountInvested);
-            for(int i = 1; i < paidByListTransaction.size(); i++) {
-                String j = paidByListTransaction.get(i);
-                FirebaseDatabase.getInstance().getReference("TransactionUnequal").child(grpID).child(ID).child(j).setValue(transactionInfo3);
-            }
         }
     }
 
@@ -151,8 +146,8 @@ public class AddEvent extends AppCompatActivity {
                         }
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Map<String, Object> data = (Map<String, Object>) snapshot.getValue();
-                            name = (String) Objects.requireNonNull(data).get("GroupName");
-                            gid = (String) Objects.requireNonNull(data).get("ID");
+                            name = (String) Objects.requireNonNull(data).get("groupName");
+                            gid = (String) Objects.requireNonNull(data).get("id");
                             groupMembers.add(name);
                         }
 

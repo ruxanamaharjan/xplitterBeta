@@ -51,25 +51,7 @@ public class Event_transac_report extends AppCompatActivity {
 
         Intent intent = getIntent();
         String currentEventName = intent.getStringExtra("currentEventName");
-//        Intent intent2 = getIntent();
-//        String GroupID = intent2.getStringExtra("GroupID");
-//        String EventID = intent2.getStringExtra("EventID");
-//        System.out.println("Uncle:"+GroupID);
-//        System.out.println("Uncle:"+EventID);
         CurrentEventName.setText(currentEventName);
-
-
-//        String currentEventID = intent.getStringExtra("currentEventID");
-//       String currentGroupName = intent.getStringExtra("currentGroupName");
-//        String currentGroupID = intent.getStringExtra("currentGroupID");
-
-//        System.out.println("GID" + currentGroupID);
-//        System.out.println("EID" + currentEventID);
-
-
-
-//                FragmentTransaction fr= getSupportFragmentManager().beginTransaction();
-//                fr.replace(R.id.,)
 
         String currentEventID = intent.getStringExtra("currentEventID");
         String currentGroupID = intent.getStringExtra("currentGroupID");
@@ -94,13 +76,6 @@ public class Event_transac_report extends AppCompatActivity {
                     }
                 });
 
-
-
-//                Intent ij = new Intent(Event_transac_report.this,FragmentReport.class);
-//                ij.putExtra("user1",user1);
-//                ij.putExtra("tempAmt",tempAmt);
-//                ij.putExtra("user2",user2);
-//                startActivity(ij);
 
         fab_add = findViewById(R.id.fab_add);
         fab_add.setOnClickListener(new View.OnClickListener() {

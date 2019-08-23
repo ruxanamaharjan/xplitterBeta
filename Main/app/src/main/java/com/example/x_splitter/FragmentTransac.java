@@ -32,23 +32,6 @@ public class FragmentTransac extends Fragment {
     String eventId;
     String ID;
 
-//    public FragmentTransac(String currentGroupID, String currentEventID) {
-//    }
-
-//    public FragmentTransac(String currentGroupId, String currentEventId)
-//    {
-//        this.currentGroupId =currentGroupId;
-//        this.currentEventId = currentEventId;
-//    }
-//
-//    public String getCurrentGroupId() {
-//        return currentGroupId;
-//    }
-//
-//    public String getCurrentEventId() {
-//        return currentEventId;
-//    }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -99,14 +82,5 @@ modelTransactions.clear();
         });
 
 //        modelTransactions.add(new ModelTransaction("21-10-2013","Lunch","2300","Neha","Food"));
-//        modelTransactions.add(new ModelTransaction("20-11-2014","Skirt","130","Sammy","Dress"));
-//        modelTransactions.add(new ModelTransaction("01-01-2013","Bus ticket","230","Srijal","Fair"));
-//        modelTransactions.add(new ModelTransaction("22-02-2014","Dinner","1000","Ruxana","Food"));
-//        modelTransactions.add(new ModelTransaction("11-10-2014","Lunch","1300","Nam","Food"));
-//        modelTransactions.add(new ModelTransaction("12-09-2017","Shirt","300","Sneha","Dress"));
-//        modelTransactions.add(new ModelTransaction("13-03-2017","Pant","1200","Nena","Dress"));
-//        modelTransactions.add(new ModelTransaction("24-02-2017","Milk","45","Nishan","Food"));
-
-
     }
 }

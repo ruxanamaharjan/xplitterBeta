@@ -84,31 +84,16 @@ public class Event extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Map<String, Object> eventdata = (Map<String, Object>) snapshot.getValue();
-                    String eventname = (String) Objects.requireNonNull(eventdata).get("EventName");
-                    GID = snapshot.child("GroupID").getValue().toString();
-                    EID = snapshot.child("ID").getValue().toString();
-//                    System.out.println("Aunty:"+EID);
-
-//                    Intent intent1 = new Intent(Event.this, Event_transac_report.class);
-//                    intent1.putExtra("EventID", EID);
-
-//                    FragmentEvent fragmentEvent = new FragmentEvent();
-//                    Bundle bundle = new Bundle();
-//                    bundle.putString("ID", ID);
-//                    fragmentEvent.setArguments(bundle);
+                    String eventname = (String) Objects.requireNonNull(eventdata).get("eventName");
+                    GID = snapshot.child("groupID").getValue().toString();
+                    EID = snapshot.child("id").getValue().toString();
 
                     FirebaseDatabase.getInstance().getReference("GroupName").child(GID).addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                 Map<String, Object> groupdata = (Map<String, Object>) dataSnapshot.getValue();
-                                GN = (String) Objects.requireNonNull(groupdata).get("GroupName");
-                                GGID = (String) Objects.requireNonNull(groupdata).get("ID");
-//                            Intent intent1 = new Intent(Event.this, Event_transac_report.class);
-//                            intent1.putExtra("GroupID", GID);
-//                            intent1.putExtra("EventID", ID);
-//                            System.out.println("Uncle:"+GID);
-//                            System.out.println("Uncle:"+ID);
-//                            new ModelHomeEvent(GID, ID);
+                                GN = (String) Objects.requireNonNull(groupdata).get("groupName");
+                                GGID = (String) Objects.requireNonNull(groupdata).get("id");
                             modelHomeEvents.add(new ModelHomeEvent(eventname, GN, "Not Settled", GGID , "123"));
                         }
 
@@ -125,14 +110,6 @@ public class Event extends AppCompatActivity {
 
             }
         });
-//
-//        modelHomeEvents.add(new ModelHomeEvent("Tour", "Kathford","Not Settled","123.0","12.0"));
-//        modelHomeEvents.add(new ModelHomeEvent("Birthday","Gang", "Not Settled", "234.0","123.7"));
-//        modelHomeEvents.add(new ModelHomeEvent("Party", "Lolwa","Not Settled", "568.9","67890.0"));
-//        modelHomeEvents.add(new ModelHomeEvent("Tour", "Kathford","Settled","123.0","12.0"));
-//        modelHomeEvents.add(new ModelHomeEvent("Birthday","Adhikari", "Not Settled", "234.0","123.7"));
-//        modelHomeEvents.add(new ModelHomeEvent("Party", "Lolwa","Not Settled", "568.9","67890.0"));
-
         return modelHomeEvents;
     }
 
@@ -144,40 +121,12 @@ public class Event extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Map<String, Object> eventdata = (Map<String, Object>) snapshot.getValue();
-                    String eventname = (String) Objects.requireNonNull(eventdata).get("EventName");
-                    GID = (String) Objects.requireNonNull(eventdata).get("GroupID");
-                    EID = (String) Objects.requireNonNull(eventdata).get("ID");
+                    String eventname = (String) Objects.requireNonNull(eventdata).get("eventName");
+                    GID = (String) Objects.requireNonNull(eventdata).get("groupID");
+                    EID = (String) Objects.requireNonNull(eventdata).get("id");
                     System.out.println("Aunty:"+EID);
                     modelHomeEvents2.add(new ModelHomeEvent(EID));
-//                    Intent intent1 = new Intent(Event.this, Event_transac_report.class);
-//                    intent1.putExtra("EventID", EID);
 
-//                    FragmentEvent fragmentEvent = new FragmentEvent();
-//                    Bundle bundle = new Bundle();
-//                    bundle.putString("ID", ID);
-//                    fragmentEvent.setArguments(bundle);
-
-//                    FirebaseDatabase.getInstance().getReference("GroupName").child(GID).addValueEventListener(new ValueEventListener() {
-//                        @Override
-//                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                            Map<String, Object> groupdata = (Map<String, Object>) dataSnapshot.getValue();
-//                            GN = (String) Objects.requireNonNull(groupdata).get("GroupName");
-//                            GGID = (String) Objects.requireNonNull(groupdata).get("ID");
-////                            Intent intent1 = new Intent(Event.this, Event_transac_report.class);
-////                            intent1.putExtra("GroupID", GID);
-////                            intent1.putExtra("EventID", ID);
-////                            System.out.println("Uncle:"+GID);
-////                            System.out.println("Uncle:"+ID);
-////                            new ModelHomeEvent(GID, ID);
-//                            //modelHomeEvents.add(new ModelHomeEvent(eventname, GN, "Not Settled", GGID , EID));
-//                        }
-
-
-//                        @Override
-//                        public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//                        }
-//                    });
                 }
             }
 
@@ -186,13 +135,6 @@ public class Event extends AppCompatActivity {
 
             }
         });
-//
-//        modelHomeEvents.add(new ModelHomeEvent("Tour", "Kathford","Not Settled","123.0","12.0"));
-//        modelHomeEvents.add(new ModelHomeEvent("Birthday","Gang", "Not Settled", "234.0","123.7"));
-//        modelHomeEvents.add(new ModelHomeEvent("Party", "Lolwa","Not Settled", "568.9","67890.0"));
-//        modelHomeEvents.add(new ModelHomeEvent("Tour", "Kathford","Settled","123.0","12.0"));
-//        modelHomeEvents.add(new ModelHomeEvent("Birthday","Adhikari", "Not Settled", "234.0","123.7"));
-//        modelHomeEvents.add(new ModelHomeEvent("Party", "Lolwa","Not Settled", "568.9","67890.0"));
 
         return modelHomeEvents2;
     }

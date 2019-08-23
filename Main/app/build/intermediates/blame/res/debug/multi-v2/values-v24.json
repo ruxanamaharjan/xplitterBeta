@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\xplitter\\Main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\nehaa\\Documents\\GitHub\\xplitterBeta\\Main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\a854b56cd163a08cc70affd1c719ec31\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\nehaa\\.gradle\\caches\\transforms-2\\files-2.1\\a854b56cd163a08cc70affd1c719ec31\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\nehaa\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

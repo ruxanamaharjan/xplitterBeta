@@ -24,6 +24,14 @@ public class FragmentEvent extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.group_event_fragment,container,false);
+
+
+
+
+
+
+
+
         Intent intent = getActivity().getIntent();
         RecyclerView recyclerView = view.findViewById(R.id.group_event_recycler_view);
 //        id = intent.getStringExtra("ID");

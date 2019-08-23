@@ -85,8 +85,8 @@ public class Group extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     Map<String, Object> groupdata = (Map<String, Object>) snapshot.getValue();
-                    String groupname = (String) Objects.requireNonNull(groupdata).get("GroupName");
-                    String ID = (String) Objects.requireNonNull(groupdata).get("ID");
+                    String groupname = (String) Objects.requireNonNull(groupdata).get("groupName");
+                    String ID = (String) Objects.requireNonNull(groupdata).get("id");
 
 //                    Intent id = new Intent(Group.this, FragmentEvent.class);
 //                    id.putExtra("ID", ID);
@@ -101,16 +101,7 @@ public class Group extends AppCompatActivity {
 
             }
         });
-//        modelGroups.add(new ModelGroup(R.mipmap.ic_applogo,"Kathford","4","2"));
-//        modelGroups.add(new ModelGroup(R.drawable.undraw_group_selfie_ijc6,"Aimless","2","1"));
-//        modelGroups.add(new ModelGroup(R.drawable.undraw_data_report_bi6l,"Lolwa","3","0"));
-//        modelGroups.add(new ModelGroup(R.drawable.undraw_time_management_30iu,"Gang","3","3"));
-//        modelGroups.add(new ModelGroup(R.drawable.undraw_make_it_rain_iwk4,"Adhikari","3","3"));
-//        modelGroups.add(new ModelGroup(R.mipmap.ic_launcher_foreground,"Maharjan","4","3"));
-//        modelGroups.add(new ModelGroup(R.drawable.undraw_having_fun_iais,"K.C.","3","3"));
-//        modelGroups.add(new ModelGroup(R.mipmap.ic_launcher,"Kirat","3","2"));
-//        modelGroups.add(new ModelGroup(R.mipmap.ic_launcher_foreground,"Mainali","1","3"));
-//        modelGroups.add(new ModelGroup(R.mipmap.ic_launcher,"Acchami","4","2"));
+
 //        modelGroups.add(new ModelGroup(R.mipmap.ic_applogo,"rayamajhi","1","0"));
 
         return modelGroups;
