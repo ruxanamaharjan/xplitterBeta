@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">152154774948-84v9sj9g3njc7lj45me1p5iuvaeqo786.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://nehaxplitter-beta.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">152154774948</string>
+    <string name="google_api_key" translatable="false">AIzaSyCshl5kOJvlYEhjwAGQkq7RHpPTcJgQUOk</string>
+    <string name="google_app_id" translatable="false">1:152154774948:android:6d90638cdd04bea9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCshl5kOJvlYEhjwAGQkq7RHpPTcJgQUOk</string>
+    <string name="google_storage_bucket" translatable="false">nehaxplitter-beta.appspot.com</string>
+    <string name="project_id" translatable="false">nehaxplitter-beta</string>
+</resources>
