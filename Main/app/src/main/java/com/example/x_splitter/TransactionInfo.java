@@ -75,5 +75,60 @@ public class TransactionInfo {
 //    }
 
 
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
+    public String getEvent() {
+        return event;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
+    }
+
+    public String getPaidBy() {
+        return paidBy;
+    }
+
+    public void setPaidBy(String paidBy) {
+        this.paidBy = paidBy;
+    }
+
+    public double getAmountToPay() {
+        return amountToPay;
+    }
+
+    public void setAmountToPay(double amountToPay) {
+        this.amountToPay = amountToPay;
+    }
+
+    public double getAmountToGet() {
+        return amountToGet;
+    }
+
+    public void setAmountToGet(double amountToGet) {
+        this.amountToGet = amountToGet;
+    }
+
+    public double getAmountInvested() {
+        return amountInvested;
+    }
+
+    public void setAmountInvested(double amountInvested) {
+        this.amountInvested = amountInvested;
+    }
+
+    public String getAmountInvestedTemp() {
+        return amountInvestedTemp;
+    }
+
+    public void setAmountInvestedTemp(String amountInvestedTemp) {
+        this.amountInvestedTemp = amountInvestedTemp;
+    }
 }
 

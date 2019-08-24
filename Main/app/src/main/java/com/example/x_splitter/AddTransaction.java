@@ -312,6 +312,13 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
             Toast.makeText(getApplicationContext(), "Please choose Date", Toast.LENGTH_SHORT).show();
             return;
         }
+        if(category.isEmpty()){
+            Toast.makeText(getApplicationContext(), "Please enter Category", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        TransactionInfo2 transactionInfo = new TransactionInfo2(amount, date, category);
+        FirebaseDatabase.getInstance().getReference("Transactions").child(groupnameID).child(eventnameID).push().setValue(transactionInfo);
 
 
         AddTransaction.super.onBackPressed();
@@ -507,8 +514,8 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                         Map<String,Object> amountDetail = (Map<String, Object>)dataSnapshot.getValue();
-                                                        amountInvestedd= Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountInvested").toString());
-                                                        amountToGett= Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountToGet").toString());
+                                                        amountInvestedd= Double.parseDouble( Objects.requireNonNull(amountDetail).get("amountInvested").toString());
+                                                        amountToGett= Double.parseDouble( Objects.requireNonNull(amountDetail).get("amountToGet").toString());
 
 //                                                        String amountInvesteddTemp = Objects.requireNonNull(amountDetail).get("amountInvested").toString();
 //                                                        amountInvestedd=Double.parseDouble(amountInvesteddTemp);

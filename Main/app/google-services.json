@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "152154774948",
-    "firebase_url": "https://nehaxplitter-beta.firebaseio.com",
-    "project_id": "nehaxplitter-beta",
-    "storage_bucket": "nehaxplitter-beta.appspot.com"
+    "project_number": "785121395184",
+    "firebase_url": "https://ruxanaxplitter1.firebaseio.com",
+    "project_id": "ruxanaxplitter1",
+    "storage_bucket": "ruxanaxplitter1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:152154774948:android:6d90638cdd04bea9",
+        "mobilesdk_app_id": "1:785121395184:android:6d90638cdd04bea9",
         "android_client_info": {
           "package_name": "com.example.x_splitter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "152154774948-nvge99bviqelneq29sop9n9r2cclnpov.apps.googleusercontent.com",
+          "client_id": "785121395184-qt289uk8kq14o4ga22ldavnrqqd6dub4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.x_splitter",
-            "certificate_hash": "0ce38f0d96309e3ac9860071d09c3ff9ee0a8ae5"
+            "certificate_hash": "e6825e10bd81b910b595956f399cfd8ebedd2dec"
           }
         },
         {
-          "client_id": "152154774948-84v9sj9g3njc7lj45me1p5iuvaeqo786.apps.googleusercontent.com",
+          "client_id": "785121395184-nlaebonivo2busb8jbl7qhcp9es1vcvi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCshl5kOJvlYEhjwAGQkq7RHpPTcJgQUOk"
+          "current_key": "AIzaSyDyf9VYQvUOK77Dsp0HyJcO1QmEZ1VleAA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "152154774948-84v9sj9g3njc7lj45me1p5iuvaeqo786.apps.googleusercontent.com",
+              "client_id": "785121395184-nlaebonivo2busb8jbl7qhcp9es1vcvi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

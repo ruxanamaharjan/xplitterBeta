@@ -119,6 +119,12 @@ public class AddEvent extends AppCompatActivity {
                             }
                         }
                     });
+            TransactionInfo transactionInfo3 = new TransactionInfo(amountToPay, amountToGet, amountInvested);
+            for(int i = 1; i < paidByListTransaction.size(); i++) {
+                String j = paidByListTransaction.get(i);
+                FirebaseDatabase.getInstance().getReference("TransactionUnequal").child(grpID).child(ID).child(j).setValue(transactionInfo3);
+            }
+
         }
     }
 
