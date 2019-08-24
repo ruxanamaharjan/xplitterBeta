@@ -25,7 +25,7 @@ public class AdapterTransaction extends RecyclerView.Adapter<AdapterTransaction.
     public class TransactionViewHolder extends RecyclerView.ViewHolder{
 
         TextView indate;
-        TextView intransac_name;
+      //  TextView intransac_name;
         TextView intransac_money;
         TextView ing_member;
         TextView intransac_category;
@@ -34,7 +34,7 @@ public class AdapterTransaction extends RecyclerView.Adapter<AdapterTransaction.
         public TransactionViewHolder(View itemView){
             super(itemView);
             indate = itemView.findViewById(R.id.transac_date);
-            intransac_name = itemView.findViewById(R.id.transac_name);
+          //  intransac_name = itemView.findViewById(R.id.transac_name);
             intransac_money = itemView.findViewById(R.id.transac_money);
             ing_member = itemView.findViewById(R.id.transac_member);
             intransac_category = itemView.findViewById(R.id.transac_category);

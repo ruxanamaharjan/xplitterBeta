@@ -41,4 +41,12 @@ public class ModelTransaction {
     public void setTransac_name(String transac_name) {
         this.transac_name = transac_name;
     }
+
+    public String getTransac_itemPaidBy() {
+        return transac_itemPaidBy;
+    }
+
+    public void setTransac_itemPaidBy(String transac_itemPaidBy) {
+        this.transac_itemPaidBy = transac_itemPaidBy;
+    }
 }
