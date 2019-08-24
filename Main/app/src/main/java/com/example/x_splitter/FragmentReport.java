@@ -21,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -32,6 +33,7 @@ public class FragmentReport extends Fragment {
     String user1;
     String user2;
     Double tempAmt;
+    Double tempAmt1;
     Double amountInvested;
     Double amountToGet;
     Double amountToPay;
@@ -106,7 +108,7 @@ public class FragmentReport extends Fragment {
                         int a = memberList.size();
                         System.out.println("three: " + a);
 
-                        for (int i = 1; i < a; i++) {
+                        for (int i = 0; i < a; i++) {
                             String user = memberList.get(i);
                             System.out.println("user1 : "+user);
                             FirebaseDatabase.getInstance().getReference("TransactionUnequal")
@@ -127,9 +129,9 @@ public class FragmentReport extends Fragment {
                                             amountToGet = Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountToGet").toString());
                                             amountToPay = Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountToPay").toString());
                                             if (amountToPay > 0) {
-                                                tempAmt = amountToPay;
+                                                tempAmt=amountToPay;
                                                 user1 = user;
-                                                for (j = 1; j < a; j++) {
+                                                for (j = 0; j < a; j++) {
                                                     String subUser = memberList.get(j);
                                                     System.out.println("subUser: "+ subUser);
                                                     FirebaseDatabase.getInstance().getReference("TransactionUnequal")
@@ -148,9 +150,15 @@ public class FragmentReport extends Fragment {
 
                                                                     if (user != subUser) {
                                                                         if (amountToGet1 > 0) {
+
+
                                                                             user2 = subUser;
                                                                             modelReport1.add(new ModelReport(user1, tempAmt, user2));
                                                                             System.out.println("ModelReport : " + modelReport1.size());
+                                                                            RecyclerView recyclerView = view.findViewById(R.id.expenses_recycler_view);
+                                                                            AdapterReport adapter = new AdapterReport(getActivity(), modelReport1);
+                                                                            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                                                                            recyclerView.setAdapter(adapter);
 
                                                                         }
                                                                     }
@@ -158,22 +166,73 @@ public class FragmentReport extends Fragment {
 
                                                                 }
 
+
                                                                 @Override
                                                                 public void onCancelled(@NonNull DatabaseError databaseError) {
 
                                                                 }
                                                             });
-                                                        break;
+                                                    System.out.println("ModelReport111 : " + modelReport1.size());
+
                                                 }
 
                                                // System.out.println("temp : " + amountToGet);
 
 //                        modelReport.addAll(modelReport1);
 
-                                                RecyclerView recyclerView = view.findViewById(R.id.expenses_recycler_view);
-                                                AdapterReport adapter = new AdapterReport(getActivity(), modelReport1);
-                                                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-                                                recyclerView.setAdapter(adapter);
+
+                                            }
+                                            if (amountToGet > 0) {
+                                                tempAmt=amountToGet;
+                                                user2 = user;
+                                                for (j = 0; j < a; j++) {
+                                                    String subUser = memberList.get(j);
+                                                    System.out.println("subUser: "+ subUser);
+                                                    FirebaseDatabase.getInstance().getReference("TransactionUnequal")
+                                                            .child(currentGroupID)
+                                                            .child(currentEventID)
+                                                            .child(subUser)
+                                                            .addValueEventListener(new ValueEventListener() {
+                                                                @Override
+                                                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                                                    Map<String, Object> amountDetail1 = (Map<String, Object>) dataSnapshot.getValue();
+                                                                    amountInvested1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountInvested").toString());
+                                                                    amountToGet1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountToGet").toString());
+                                                                    amountToPay1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountToPay").toString());
+                                                                    System.out.println("In :"+amountInvested1);
+                                                                    System.out.println("get:"+ amountToGet1);
+
+                                                                    if (user != subUser) {
+                                                                        if (amountToPay1 > 0) {
+                                                                            user1 = subUser;
+                                                                            modelReport1.add(new ModelReport(user1, tempAmt, user2));
+                                                                            System.out.println("ModelReport : " + modelReport1.size());
+                                                                            RecyclerView recyclerView = view.findViewById(R.id.expenses_recycler_view);
+                                                                            AdapterReport adapter = new AdapterReport(getActivity(), modelReport1);
+                                                                            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                                                                            recyclerView.setAdapter(adapter);
+
+                                                                        }
+                                                                    }
+
+
+                                                                }
+
+
+                                                                @Override
+                                                                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                                                }
+                                                            });
+                                                    System.out.println("ModelReport111 : " + modelReport1.size());
+
+                                                }
+
+                                                // System.out.println("temp : " + amountToGet);
+
+//                        modelReport.addAll(modelReport1);
+
+
                                             }
                                         }
 

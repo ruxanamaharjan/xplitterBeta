@@ -4,11 +4,13 @@ public class TransactionInfo2 {
     String amount;
     String date;
     String category;
+    String itemPaidBy;
 
-    public TransactionInfo2(String amount, String date, String category) {
+    public TransactionInfo2(String amount, String date, String category, String itemPaidBy) {
         this.amount = amount;
         this.date = date;
         this.category = category;
+        this.itemPaidBy = itemPaidBy;
     }
 
     public String getAmount() {
@@ -33,5 +35,13 @@ public class TransactionInfo2 {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getItemPaidBy() {
+        return itemPaidBy;
+    }
+
+    public void setItemPaidBy(String itemPaidBy) {
+        this.itemPaidBy = itemPaidBy;
     }
 }

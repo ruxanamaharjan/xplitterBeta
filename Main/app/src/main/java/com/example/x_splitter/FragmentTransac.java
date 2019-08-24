@@ -65,7 +65,9 @@ modelTransactions.clear();
                     String amount = snapshot.child("amount").getValue().toString();
                     String category = snapshot.child("category").getValue().toString();
                     String date = snapshot.child("date").getValue().toString();
-                modelTransactions.add(new ModelTransaction(date,amount,category));
+                    String itemPaidBy = snapshot.child("itemPaidBy").getValue().toString();
+                    System.out.println("paidByyyy: "+ itemPaidBy);
+                modelTransactions.add(new ModelTransaction(date,amount,category,itemPaidBy));
 
             }
                 RecyclerView recyclerView = view.findViewById(R.id.event_transac_recycler_view);

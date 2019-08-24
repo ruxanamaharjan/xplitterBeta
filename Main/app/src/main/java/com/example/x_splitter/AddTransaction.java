@@ -303,6 +303,7 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
         String amount = TextViewAmount.getText().toString().trim();
         String date = TextViewDate.getText().toString().trim();
         String category = TextViewCategory.getText().toString().trim();
+        String itemPaidBy = SpinnerPaidBy.getSelectedItem().toString().trim();
 
         if(amount.isEmpty()){
             Toast.makeText(getApplicationContext(), "Please enter Amount", Toast.LENGTH_SHORT).show();
@@ -317,7 +318,7 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
-        TransactionInfo2 transactionInfo = new TransactionInfo2(amount, date, category);
+        TransactionInfo2 transactionInfo = new TransactionInfo2(amount, date, category,itemPaidBy);
         FirebaseDatabase.getInstance().getReference("Transactions").child(groupnameID).child(eventnameID).push().setValue(transactionInfo);
 
 

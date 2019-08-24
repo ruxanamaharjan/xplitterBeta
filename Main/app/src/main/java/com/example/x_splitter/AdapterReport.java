@@ -43,6 +43,7 @@ public class AdapterReport extends RecyclerView.Adapter<AdapterReport.ReportView
 
     @Override
     public void onBindViewHolder(@NonNull ReportViewHolder holder, int position) {
+        System.out.println("U1: "+data.get(position).getUser1());
         holder.user1.setText(data.get(position).getUser1());
         holder.amount.setText(Double.toString(data.get(position).getAmount()));
         holder.user2.setText(data.get(position).getUser2());

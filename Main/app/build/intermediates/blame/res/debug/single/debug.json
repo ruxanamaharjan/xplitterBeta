@@ -28,12 +28,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\layout\\text_view_with_line_height_from_layout.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icn_back.png.flat",
         "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\icn_back.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_groups.png.flat",
@@ -108,12 +108,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\layout\\mtrl_calendar_viewpager.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\interpolator\\btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_option.png.flat",
@@ -124,12 +124,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_filled_background_color.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_skip.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\skip.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\5b935040a21a40d4fb61a54dd9d3ad1c\\core-1.1.0-rc02\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_skip.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\skip.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\layout_cardview_each_transac.xml.flat",
@@ -152,12 +152,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_extended_fab_ripple_color.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dot_bar5.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-hdpi\\dot_bar5.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_sign_up_click.png.flat",
         "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-mdpi\\sign_up_click.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dot_bar5.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-hdpi\\dot_bar5.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_borderless_material.xml.flat",
@@ -168,12 +168,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\951b5e7f354daaaf8db57d3e12181016\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_events_top_text.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxxhdpi\\events_top_text.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_search_box.png.flat",
         "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-mdpi\\search_box.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_events_top_text.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxxhdpi\\events_top_text.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -188,16 +188,16 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\a854b56cd163a08cc70affd1c719ec31\\media-1.0.0\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dialog_background.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\drawable\\mtrl_dialog_background.xml"
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\layout_group_event_fragment.xml.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\layout\\group_event_fragment.xml"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_top_static_bar.png.flat",
         "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\top_static_bar.png"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\layout_group_event_fragment.xml.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\layout\\group_event_fragment.xml"
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dialog_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\drawable\\mtrl_dialog_background.xml"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_transaction_add_outer_box.png.flat",
@@ -228,12 +228,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\anim\\btn_checkbox_to_checked_icon_null_animation.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_aqua_background.png.flat",
@@ -268,12 +268,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_text_color_selector.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_extended_fab_text_color_selector.xml"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_events_top_text.png.flat",
         "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xhdpi\\events_top_text.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_extended_fab_text_color_selector.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_extended_fab_text_color_selector.xml"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_aqua.png.flat",
@@ -300,32 +300,32 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_btn_text_btn_bg_color_selector.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_add_cancel_button.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\add_cancel_button.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_colored_ripple_color.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_tabs_colored_ripple_color.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_get_started.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xhdpi\\get_started.png"
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_add_cancel_button.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\add_cancel_button.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_design_ic_visibility.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_get_started.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xhdpi\\get_started.png"
+    },
+    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_outlined_icon_tint.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_outlined_icon_tint.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_login.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xhdpi\\login.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_text_input_date_range.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\layout\\mtrl_picker_text_input_date_range.xml"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_login.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xhdpi\\login.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_btn_login_email.png.flat",
@@ -348,24 +348,24 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_home_group_bar.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\home_group_bar.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_group.xml.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\layout\\activity_group.xml"
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_home_group_bar.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-xxhdpi\\home_group_bar.png"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_top_bar_with_search.png.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-ldpi\\top_bar_with_search.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_background_color.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\mtrl_navigation_item_background_color.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_top_bar_with_search.png.flat",
-        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\drawable-ldpi\\top_bar_with_search.png"
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_group.xml.flat",
+        "source": "E:\\xplitterBeta\\Main\\app\\src\\main\\res\\layout\\activity_group.xml"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_transaction_note_outer_box.png.flat",
@@ -456,12 +456,12 @@
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\layout\\design_layout_tab_text.xml"
     },
     {
-        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\color_design_error.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\color\\design_error.xml"
+    },
+    {
+        "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_btn_login_gmail.png.flat",

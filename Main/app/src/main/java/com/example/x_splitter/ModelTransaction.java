@@ -6,13 +6,15 @@ public class ModelTransaction {
     private String date;
     private String transac_money;
     private String transac_category;
+    private String transac_itemPaidBy;
 
-    public ModelTransaction(String date,  String transac_money, String transac_category) {
+    public ModelTransaction(String date,  String transac_money, String transac_category, String transac_itemPaidBy) {
         this.date = date;
 
         this.transac_money = transac_money;
 
         this.transac_category = transac_category;
+        this.transac_itemPaidBy = transac_itemPaidBy;
     }
 
     public String getDate() {
@@ -40,5 +42,13 @@ public class ModelTransaction {
 
     public void setTransac_category(String transac_category) {
         this.transac_category = transac_category;
+    }
+
+    public String getTransac_itemPaidBy() {
+        return transac_itemPaidBy;
+    }
+
+    public void setTransac_itemPaidBy(String transac_itemPaidBy) {
+        this.transac_itemPaidBy = transac_itemPaidBy;
     }
 }
