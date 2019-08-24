@@ -656,6 +656,7 @@ attr rangeFillColor
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
+attr recyclerViewStyle
 attr region_heightLessThan
 attr region_heightMoreThan
 attr region_widthLessThan
@@ -2060,6 +2061,7 @@ id rounded
 id rv_add_friend
 id rv_add_user
 id rv_bills
+id rv_media_popup
 id rv_split_unequal
 id save_image_matrix
 id save_non_transition_alpha
@@ -2205,6 +2207,7 @@ id unequal_split_member_share
 id uniform
 id unlabeled
 id up
+id uploaded_media
 id useLogo
 id view_offset_helper
 id view_pager_event_member
@@ -2305,6 +2308,7 @@ layout cardview_friendlist_item
 layout cardview_group_item
 layout cardview_image_view
 layout cardview_search_friend
+layout cardview_see_media
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2336,6 +2340,7 @@ layout large_toolbar_with_search
 layout layout_home
 layout layout_home_event
 layout layout_home_group
+layout media_popup
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -3294,7 +3299,7 @@ styleable PopupWindow android_popupBackground android_popupAnimationStyle overla
 styleable PopupWindowBackgroundState state_above_anchor
 styleable PropertySet android_visibility android_alpha layout_constraintTag motionProgress visibilityMode
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
-styleable RecyclerView android_orientation android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
+styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
