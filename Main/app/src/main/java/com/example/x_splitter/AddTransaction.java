@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -23,11 +24,15 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -176,10 +181,8 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
 
                                 }
                                 else {
-                                    amountToPay = amountToPay- difference;
+                                    amountToPay = amountToPay - difference;
                                 }
-
-
 
                                 Map<String,Object> amountDetails = new HashMap<>();
                                 amountDetails.put("amountInvested",amountInvested);
@@ -208,21 +211,12 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
                     final FragmentManager fr = getSupportFragmentManager();
                     final FragmentUnequalSplit fragmentUnequalSplit = new FragmentUnequalSplit(groupnameID, groupnametransaction,eventnameID);
                     fragmentUnequalSplit.show(fr,"Member");
-//                    FragmentUnequalSplit fragmentUnequalSplit1 = new FragmentUnequalSplit(groupnameID,eventnameID);
-//                    fragmentUnequalSplit1.show(fr,"Member1");
+
                     String ss = TextViewAmount.getText().toString().trim();
-//                    Intent intent = new Intent(AddTransaction.this, FragmentUnequalSplit.class);
-//                    intent.putExtra("AmountReceived", ss);
-//                    startActivity(intent);
                     System.out.println(ss);
                     Bundle bundle = new Bundle();
                     bundle.putString("params", ss);
                     fragmentUnequalSplit.setArguments(bundle);
-// set MyFragment Arguments
-//                    FragmentUnequalSplit myObj = new FragmentUnequalSplit();
-//                    myObj.setArguments(bundle);
-
-
                     Toast.makeText(AddTransaction.this,"Selected Unequally",Toast.LENGTH_SHORT).show();
 
                 }
@@ -282,7 +276,7 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-
+//end select images
 
     private void dateSelector(){
         Calendar cal = Calendar.getInstance();
@@ -298,8 +292,10 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
         dialog.show();
     }
 //***********************End of Date & Time*********************************************************
-
+    ArrayList<String> mediaIdList = new ArrayList<>();
+    int totalmediaUploaded = 0;
     private void saveTransaction(){
+        DatabaseReference dbRef =  FirebaseDatabase.getInstance().getReference("Transactions").child(groupnameID).child(eventnameID);
         String amount = TextViewAmount.getText().toString().trim();
         String date = TextViewDate.getText().toString().trim();
         String category = TextViewCategory.getText().toString().trim();
@@ -318,7 +314,39 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
         }
 
         TransactionInfo2 transactionInfo = new TransactionInfo2(amount, date, category);
-        FirebaseDatabase.getInstance().getReference("Transactions").child(groupnameID).child(eventnameID).push().setValue(transactionInfo);
+        //dbRef.child(groupnameID).child(eventnameID).push().setValue(transactionInfo);
+      //  dbRef.child(groupnameID).child(eventnameID).child("media").setValue(mediaURIList);
+//        dbRef.child(groupnameID).child(eventnameID).child("media").setValue(mediaURIList);
+        String transactionId = dbRef.push().getKey();
+        dbRef.child(transactionId).setValue(transactionInfo);
+        System.out.println("neha  " + transactionId);
+        if(!mediaURIList.isEmpty()){
+            for (String mediaUri : mediaURIList){
+                String mediaId = dbRef.child(transactionId).child("media").push().getKey();
+                mediaIdList.add(mediaId);
+                final StorageReference filepath = FirebaseStorage.getInstance().getReference().child("bills").child(transactionId).child(mediaId);
+
+                UploadTask uploadTask = filepath.putFile(Uri.parse(mediaUri));
+
+                uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        filepath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                dbRef.child(transactionId).child("media").child(mediaIdList.get(totalmediaUploaded)).setValue(uri.toString());
+
+                                totalmediaUploaded++;
+                                if(totalmediaUploaded == mediaURIList.size()){
+                                    Toast.makeText(getApplicationContext(), "All media uploaded", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
 
 
         AddTransaction.super.onBackPressed();
@@ -516,11 +544,6 @@ public class AddTransaction extends AppCompatActivity implements View.OnClickLis
                                                         Map<String,Object> amountDetail = (Map<String, Object>)dataSnapshot.getValue();
                                                         amountInvestedd= Double.parseDouble( Objects.requireNonNull(amountDetail).get("amountInvested").toString());
                                                         amountToGett= Double.parseDouble( Objects.requireNonNull(amountDetail).get("amountToGet").toString());
-
-//                                                        String amountInvesteddTemp = Objects.requireNonNull(amountDetail).get("amountInvested").toString();
-//                                                        amountInvestedd=Double.parseDouble(amountInvesteddTemp);
-//                                                        String amountToGettTemp = Objects.requireNonNull(amountDetail).get("amountToGet").toString();
-//                                                        amountToGett=Double.parseDouble(amountToGettTemp);
 
                                                         amountInvested=amountInvestedd+at;
                                                         amountToGet=amountToGett+at;
