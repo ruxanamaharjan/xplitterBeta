@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,6 +29,7 @@ public class AdapterTransaction extends RecyclerView.Adapter<AdapterTransaction.
         TextView intransac_money;
         TextView ing_member;
         TextView intransac_category;
+        ImageButton btn_edit_transac;
 
         public TransactionViewHolder(View itemView){
             super(itemView);
@@ -36,6 +38,7 @@ public class AdapterTransaction extends RecyclerView.Adapter<AdapterTransaction.
             intransac_money = itemView.findViewById(R.id.transac_money);
             ing_member = itemView.findViewById(R.id.transac_member);
             intransac_category = itemView.findViewById(R.id.transac_category);
+            btn_edit_transac = itemView.findViewById(R.id.btn_edit_transac);
         }
     }
 
@@ -50,7 +53,13 @@ public class AdapterTransaction extends RecyclerView.Adapter<AdapterTransaction.
     public void onBindViewHolder(@NonNull TransactionViewHolder holder, int position) {
         holder.indate.setText(data.get(position).getDate());
         holder.intransac_money.setText(data.get(position).getTransac_money());
-        holder.intransac_category.setText(data.get(position).getTransac_category());
+        holder.intransac_name.setText(data.get(position).getTransac_name());
+        holder.btn_edit_transac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     @Override
