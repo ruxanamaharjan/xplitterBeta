@@ -1,10 +1,10 @@
-#Sun Aug 25 10:52:43 NPT 2019
+#Sun Aug 25 12:10:19 NPT 2019
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=E\:\\xplitterBeta\\Main\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes2.dex
-base.1=E\:\\xplitterBeta\\Main\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
-base.0=E\:\\xplitterBeta\\Main\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+base.2=C\:\\Academics\\Final Project\\xplitterBetaNam\\Main\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes2.dex
+base.1=C\:\\Academics\\Final Project\\xplitterBetaNam\\Main\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.0=C\:\\Academics\\Final Project\\xplitterBetaNam\\Main\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex

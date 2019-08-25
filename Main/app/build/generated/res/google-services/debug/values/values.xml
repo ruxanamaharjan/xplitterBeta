@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">785121395184-nlaebonivo2busb8jbl7qhcp9es1vcvi.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://ruxanaxplitter1.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">785121395184</string>
-    <string name="google_api_key" translatable="false">AIzaSyDyf9VYQvUOK77Dsp0HyJcO1QmEZ1VleAA</string>
-    <string name="google_app_id" translatable="false">1:785121395184:android:6d90638cdd04bea9</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDyf9VYQvUOK77Dsp0HyJcO1QmEZ1VleAA</string>
-    <string name="google_storage_bucket" translatable="false">ruxanaxplitter1.appspot.com</string>
-    <string name="project_id" translatable="false">ruxanaxplitter1</string>
+    <string name="default_web_client_id" translatable="false">403333067000-ujj1cfhbl4r7i7bealqj395ccsl3chq1.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://xplitternam.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">403333067000</string>
+    <string name="google_api_key" translatable="false">AIzaSyABOiWL2_2bl57-GrTnkLhjVEJ8nWCHiI8</string>
+    <string name="google_app_id" translatable="false">1:403333067000:android:6d90638cdd04bea9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyABOiWL2_2bl57-GrTnkLhjVEJ8nWCHiI8</string>
+    <string name="google_storage_bucket" translatable="false">xplitternam.appspot.com</string>
+    <string name="project_id" translatable="false">xplitternam</string>
 </resources>

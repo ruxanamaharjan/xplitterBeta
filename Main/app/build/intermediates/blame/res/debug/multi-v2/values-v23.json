@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\xplitterBeta\\Main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Academics\\Final Project\\xplitterBetaNam\\Main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\91482f6452f8e2279fb096c6daca6c99\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\namko\\.gradle\\caches\\transforms-2\\files-2.1\\91482f6452f8e2279fb096c6daca6c99\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\namko\\.gradle\\caches\\transforms-2\\files-2.1\\87ca3edcfd3e49615c2cfd43e9fb12fb\\material-1.1.0-alpha09\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6,9,12,16,19",
                         "startColumns": "4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\namko\\.gradle\\caches\\transforms-2\\files-2.1\\7c8955b6c1f2611dfb592ef20e6d78b0\\appcompat-1.1.0-rc01\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

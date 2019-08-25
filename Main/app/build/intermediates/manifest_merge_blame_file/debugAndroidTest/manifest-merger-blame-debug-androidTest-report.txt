@@ -3,31 +3,31 @@
 3    package="com.example.x_splitter.test" >
 4
 5    <uses-sdk
-5-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:5:5-74
+5-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:5:5-74
 6        android:minSdkVersion="21"
-6-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:5:15-41
+6-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:5:15-41
 7        android:targetSdkVersion="28" />
-7-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:5:42-71
+7-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:5:42-71
 8
 9    <instrumentation
-9-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:11:5-15:72
+9-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:11:5-15:72
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:11:22-76
+10-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:11:22-76
 11        android:functionalTest="false"
-11-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:14:22-52
+11-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:14:22-52
 12        android:handleProfiling="false"
-12-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:13:22-53
+12-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:13:22-53
 13        android:label="Tests for com.example.x_splitter"
-13-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:15:22-70
+13-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:15:22-70
 14        android:targetPackage="com.example.x_splitter" />
-14-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:12:22-68
+14-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:12:22-68
 15
 16    <application android:debuggable="true" >
-16-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:7:5-9:19
-16-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:7:18-43
+16-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:7:5-9:19
+16-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:7:18-43
 17        <uses-library android:name="android.test.runner" />
-17-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:8:9-60
-17-->E:\xplitterBeta\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7108220830161062431.xml:8:23-57
+17-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:8:9-60
+17-->C:\Academics\Final Project\xplitterBetaNam\Main\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8327931268881565212.xml:8:23-57
 18    </application>
 19
 20</manifest>
