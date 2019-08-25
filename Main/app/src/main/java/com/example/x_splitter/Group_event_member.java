@@ -28,8 +28,14 @@ public class Group_event_member extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.group_event_member);
 
-        
+        CurrentGroupName = findViewById(R.id.group_name);
 
+        Intent intent = getIntent();
+        String currentGroupName = intent.getStringExtra("currentGroupName");
+        String currentGroupId = intent.getStringExtra("currentGroupId");
+        CurrentGroupName.setText(currentGroupName);
+        System.out.println("iddddd: "+ currentGroupId);
+       // System.out.println("iddddd: "+ currentGroupName);
 
 
         fab_add = findViewById(R.id.fab_add);

@@ -6,13 +6,15 @@ public class ModelTransaction {
     private String date;
     private String transac_money;
     private String transac_name;
+    private String transac_itemPaidBy;
 
-    public ModelTransaction(String date,  String transac_money, String transac_name) {
+    public ModelTransaction(String date,  String transac_money, String transac_name, String transac_itemPaidBy) {
         this.date = date;
 
         this.transac_money = transac_money;
 
         this.transac_name = transac_name;
+        this.transac_itemPaidBy = transac_itemPaidBy;
     }
 
     public String getDate() {

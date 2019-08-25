@@ -57,22 +57,23 @@ public class AdapterGroup extends RecyclerView.Adapter<AdapterGroup.GroupMyViewH
     public void onBindViewHolder(@NonNull GroupMyViewHolder holder, int position) {
         holder.inGroup_image.setImageResource(dataFiltered.get(position).getInGroup_image());
         holder.inGroup_name.setText(dataFiltered.get(position).getInGroup_name());
-//        holder.inUnsettle_no.setText(data.get(position).getInUnsettle_no());
-//        holder.inSettle_no.setText(data.get(position).getInUnsettle_no());
+        holder.inUnsettle_no.setText(data.get(position).getInUnsettle_no());
+        holder.inSettle_no.setText(data.get(position).getInUnsettle_no());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String currentGroupName =holder.inGroup_name.getText().toString();
+                String currentGroupId = holder.inSettle_no.getText().toString();
                 ModelGroup mg= new ModelGroup();
 //                String currentGroupID = mg.getInGroup_id();
 //                System.out.println("Srij:" + currentGroupID);
-
                 grpName=currentGroupName;
                 Context context = view.getContext();
                 Intent intent = new Intent(context,Group_event_member.class);
                 Intent intent1 = new Intent(context,FragmentEvent.class);
                 intent1.putExtra("currentGroupName", currentGroupName);
                 intent.putExtra("currentGroupName", currentGroupName);
+                intent.putExtra("currentGroupId", currentGroupId);
                 context.startActivity(intent);
             }
         });

@@ -24,6 +24,7 @@
     <string name="add_friend_group">Add Friend</string>
     <string name="members"> <u> MEMBERS </u></string>
     <string name="profile_name">Profile name</string>
+    <string name="pay">Pay</string>
 
     <string-array name="splits">
         <item> Choose Splitting</item>>

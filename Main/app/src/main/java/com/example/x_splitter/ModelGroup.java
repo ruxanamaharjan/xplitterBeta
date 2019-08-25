@@ -12,7 +12,7 @@ public class ModelGroup {
     public ModelGroup(){
 
     }
-    public ModelGroup(int inGroup_image, String inGroup_name, String inGroup_id, String inUnsettle_no, String inSettle_no) {
+    public ModelGroup(int inGroup_image, String inGroup_name, String inUnsettle_no, String inSettle_no) {
         this.inGroup_image = inGroup_image;
         this.inGroup_name = inGroup_name;
         this.inGroup_id =inGroup_id;
@@ -42,19 +42,19 @@ public class ModelGroup {
         this.inGroup_name = inGroup_name;
     }
 
-//    public String getInUnsettle_no() {
-//        return inUnsettle_no;
-//    }
-//
-//    public void setInUnsettle_no(String inUnsettle_no) {
-//        this.inUnsettle_no = inUnsettle_no;
-//    }
-//
-//    public String getInSettle_no() {
-//        return inSettle_no;
-//    }
-//
-//    public void setInSettle_no(String inSettle_no) {
-//        this.inSettle_no = inSettle_no;
-//    }
+    public String getInUnsettle_no() {
+        return inUnsettle_no;
+    }
+
+    public void setInUnsettle_no(String inUnsettle_no) {
+        this.inUnsettle_no = inUnsettle_no;
+    }
+
+    public String getInSettle_no() {
+        return inSettle_no;
+    }
+
+    public void setInSettle_no(String inSettle_no) {
+        this.inSettle_no = inSettle_no;
+    }
 }

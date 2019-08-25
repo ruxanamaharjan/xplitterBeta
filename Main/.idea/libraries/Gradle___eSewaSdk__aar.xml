@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :eSewaSdk:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cebb16f8f1e42bf32d5ccbb11214a5e0/jetified-eSewaSdk/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cebb16f8f1e42bf32d5ccbb11214a5e0/jetified-eSewaSdk/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

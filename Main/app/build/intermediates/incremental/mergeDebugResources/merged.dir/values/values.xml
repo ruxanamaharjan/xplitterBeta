@@ -366,10 +366,13 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="action_bar_color">#DCDDDF</color>
+    <color name="background_color">#05f3f3f3</color>
     <color name="background_floating_material_dark">@color/material_grey_800</color>
     <color name="background_floating_material_light">@android:color/white</color>
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
+    <color name="black">#000000</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -382,6 +385,7 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="charcoal">#272b27</color>
     <color name="colorAccent">#009688</color>
     <color name="colorInsideBackground">#f0f3f4</color>
     <color name="colorInsideHint">#9FA2A2</color>
@@ -436,12 +440,35 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="eSewa">#4C641F</color>
+    <color name="edit_text_color">#FFFFFF</color>
     <color name="error_color_material_dark">#ff7043</color>
     <color name="error_color_material_light">#ff5722</color>
+    <color name="error_red">#F44336</color>
+    <color name="esewa_color">#61bc47</color>
+    <color name="esewa_dark_color">#00B050</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="getStartedTabIndicator">#ffffff</color>
     <color name="getStartedTabText">#ffffff</color>
+    <color name="golden">#CB6E27</color>
+    <color name="gray_1">#6B6B6B</color>
+    <color name="gray_10">#DEDEE0</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_3">#C0C0C0</color>
+    <color name="gray_4">#D0D0D0</color>
+    <color name="gray_5">#E5E5E5</color>
+    <color name="gray_6">#F5F5F5</color>
+    <color name="gray_7">#f1f1f1</color>
+    <color name="gray_8">#E3E3E3</color>
+    <color name="gray_9">#707070</color>
+    <color name="green1">#77A744</color>
+    <color name="green2">#298A08</color>
+    <color name="green_button_unchecked">@color/green1</color>
+    <color name="green_header_unenabled">#9941a124</color>
+    <color name="green_primary">#5fb946</color>
+    <color name="grey">#d9d9d9</color>
     <color name="groupTab">#6E8CA0</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -471,6 +498,7 @@
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="primary_color">#61bc47</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -479,18 +507,32 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="purple_1">#652c8b</color>
+    <color name="purple_2">#8456a2</color>
+    <color name="purple_3">#932176</color>
+    <color name="purple_4">#dacce3</color>
+    <color name="red">#FF0000</color>
+    <color name="registration_background_color">#195c5c5c</color>
+    <color name="registration_border_color">#d0d0d0</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="semitransparent">#AF000000</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="tab_pressed_color">#4CAF50</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="view_line_color">#c0c0c0</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#ffff</color>
+    <color name="white2">#F8F8F8</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -570,7 +612,12 @@
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="action_bar_size">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="appcompat_dialog_background_inset">16dp</dimen>
+    <dimen name="border_line_width">0.8dp</dimen>
+    <dimen name="border_radius">2dp</dimen>
+    <dimen name="button_heights">42dp</dimen>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
@@ -809,6 +856,7 @@
     <dimen name="subtitle_shadow_offset">2dp</dimen>
     <dimen name="subtitle_shadow_radius">2dp</dimen>
     <dimen name="test_mtrl_calendar_day_cornerSize">52dp</dimen>
+    <dimen name="text_size">14sp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
     <dimen name="tooltip_margin">8dp</dimen>
@@ -956,9 +1004,11 @@
     <string name="app_name">Xplitter</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="cancel">CANCEL</string>
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="checking_credentials">Verifying Merchant ...</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
@@ -983,9 +1033,11 @@
     <string name="default_web_client_id" translatable="false">785121395184-nlaebonivo2busb8jbl7qhcp9es1vcvi.apps.googleusercontent.com</string>
     <string name="divider">divider</string>
     <string name="email_hint">Enter your e-mail</string>
+    <string name="email_regex">^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$</string>
     <string name="enter_password">Enter password</string>
     <string name="enter_username">Enter username</string>
     <string name="error_icon_content_description">Error</string>
+    <string name="esewa_url">www.esewa.com.np</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
@@ -1002,8 +1054,10 @@
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="intro_img">intro_img</string>
+    <string name="login">LOGIN</string>
     <string name="login_img_desc">login img</string>
     <string name="members"> <u> MEMBERS </u></string>
+    <string name="mpin_regex">[0-9]{4}</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string description="Content description for a close icon that lets the user remove content from the screen" name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_exceed_max_badge_number_suffix" translatable="false"><ns1:g example="999" id="maximum number">%1$d</ns1:g><ns1:g example="+" id="suffix">%2$s</ns1:g></string>
@@ -1027,12 +1081,14 @@
     <string description="Label for a single date selected by the user [CHAR_LIMIT=60]" name="mtrl_picker_text_input_date_hint">Date</string>
     <string description="Label for the end date in a range selected by the user [CHAR_LIMIT=60]" name="mtrl_picker_text_input_date_range_end_hint">End Date</string>
     <string description="Label for the start date in a range selected by the user [CHAR_LIMIT=60]" name="mtrl_picker_text_input_date_range_start_hint">Start Date</string>
+    <string name="password">Password</string>
     <string name="password_hint">Password</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="pay">Pay</string>
     <string name="profile_name">Profile name</string>
     <string name="project_id" translatable="false">ruxanaxplitter1</string>
     <string name="save">Save</string>
@@ -1042,7 +1098,9 @@
     <string name="skip">Skip</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="textview">TextView</string>
+    <string name="userId">eSewaId</string>
     <string name="username">Username</string>
+    <string name="verification_code_info">( A 6 digit verification code has been sent to your mobile number )</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -3209,6 +3267,11 @@
     <style name="ShapeAppearanceOverlay.TopRightDifferentCornerSize">
     <item name="cornerSizeTopRight">20px</item>
   </style>
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/primary_color</item>
+        <item name="colorControlActivated">@color/primary_color</item>
+        <item name="colorSwitchThumbNormal">@color/grey</item>
+    </style>
     <style name="Test.ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day" parent="">
     <item name="cornerFamily">rounded</item>
     <item name="cornerSize">@dimen/test_mtrl_calendar_day_cornerSize</item>
@@ -4521,6 +4584,91 @@
   </style>
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
+    </style>
+    <style name="back_button_imageview">
+        <item name="android:layout_width">47dp</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:src">@drawable/img_ic_back_btn_white</item>
+    </style>
+    <style name="back_button_white_imageview" parent="back_button_imageview">
+        <item name="android:src">@drawable/img_ic_back_btn_white</item>
+    </style>
+    <style name="button_style_primary" parent="match_parent_wrap_content">
+        <item name="android:layout_height">@dimen/button_heights</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_background_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="cardview_style" parent="match_parent_wrap_content">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+    <style name="header_logo_image_style">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="individual_customer_profile_text_tag_style" parent="wrap_content">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="individual_flight_detail_pop_up_text_value_style" parent="individual_customer_profile_text_tag_style">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="linearlayout_style" parent="match_parent_wrap_content">
+        <item name="android:orientation">vertical</item>
+        <item name="android:importantForAutofill">noExcludeDescendants</item>
+    </style>
+    <style name="linearlayout_style_horizontal" parent="linearlayout_style">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="match_parent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:fontFamily">@font/roboto</item>-->
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="match_parent_wrap_content" parent="match_parent">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="scrollview_style_for_all_layout" parent="match_parent_wrap_content">
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fillViewport">false</item>
+        <item name="android:background">@color/background_color</item>
+    </style>
+    <style name="switch_style" parent="match_parent_wrap_content">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:theme">@style/SwitchTheme</item>
+        <item name="android:text">Remember this eSewa ID</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textOn"/>
+        <item name="android:textOff"/>
+    </style>
+    <style name="view_horizontal_line_commission_view" parent="view_horizontal_line_style_light_color">
+        <item name="android:layout_height">0.65dp</item>
+    </style>
+    <style name="view_horizontal_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/border_line_width</item>
+        <item name="android:background">@color/view_line_color</item>
+    </style>
+    <style name="view_horizontal_line_style_light_color" parent="view_horizontal_line_style">
+        <item name="android:background">@color/registration_background_color</item>
+    </style>
+    <style name="wrap_content" parent="match_parent_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
     </style>
     <declare-styleable name="ActionBar">
         <!-- The type of navigation to use. -->
@@ -6585,6 +6733,18 @@
     <declare-styleable name="PopupWindowBackgroundState">
         <!-- State identifier indicating the popup will be above the anchor. -->
         <attr format="boolean" name="state_above_anchor"/>
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr format="boolean" name="progressIndeterminate"/>
+        <attr format="color" name="barColor"/>
+        <attr format="color" name="rimColor"/>
+        <attr format="dimension" name="rimWidth"/>
+        <attr format="float" name="spinSpeed"/>
+        <attr format="integer" name="barSpinCycleTime"/>
+        <attr format="dimension" name="circleRadius"/>
+        <attr format="boolean" name="fillRadius"/>
+        <attr format="dimension" name="barWidth"/>
+        <attr format="boolean" name="linearProgress"/>
     </declare-styleable>
     <declare-styleable name="PropertySet"><attr name="android:visibility"/><attr name="visibilityMode"/><attr format="float" name="android:alpha"/><attr name="motionProgress"/><attr name="layout_constraintTag"/></declare-styleable>
     <declare-styleable name="RecycleListView">

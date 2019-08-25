@@ -55,6 +55,7 @@ public class AdapterTransaction extends RecyclerView.Adapter<AdapterTransaction.
         holder.indate.setText(data.get(position).getDate());
         holder.intransac_money.setText(data.get(position).getTransac_money());
         holder.intransac_name.setText(data.get(position).getTransac_name());
+        holder.ing_member.setText(data.get(position).getTransac_itemPaidBy());
         holder.btn_edit_transac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -92,7 +92,7 @@ public class Group extends AppCompatActivity {
 //                    id.putExtra("ID", ID);
 //                    startActivity(id);
 
-                    modelGroups.add(new ModelGroup(R.mipmap.ic_applogo, groupname, ID,  "1", "2"));
+                    modelGroups.add(new ModelGroup(R.mipmap.ic_applogo, groupname, ID, "2"));
                 }
             }
 

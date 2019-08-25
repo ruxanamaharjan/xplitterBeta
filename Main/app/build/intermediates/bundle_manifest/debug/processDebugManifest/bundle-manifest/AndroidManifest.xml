@@ -23,7 +23,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.x_splitter.AddEvent" />
         <activity android:name="com.example.x_splitter.FAB_Menu_page" />
@@ -151,6 +150,21 @@
             android:authorities="com.example.x_splitter.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
+
+        <activity
+            android:name="com.esewa.android.sdk.payment.ESewaLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.esewa.android.sdk.payment.ESewaPaymentConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.esewa.android.sdk.payment.ESewaPaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>

@@ -3,18 +3,24 @@ package com.example.x_splitter;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.esewa.android.sdk.payment.ESewaConfiguration;
+import com.esewa.android.sdk.payment.ESewaPayment;
+import com.esewa.android.sdk.payment.ESewaPaymentActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -25,6 +31,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+
+import static android.app.Activity.RESULT_CANCELED;
+import static android.app.Activity.RESULT_OK;
 
 public class FragmentReport extends Fragment {
 
@@ -47,7 +56,16 @@ public class FragmentReport extends Fragment {
     int j;
 
 
-    public FragmentReport(){}
+    private static final String CONFIG_ENVIRONMENT = ESewaConfiguration.ENVIRONMENT_TEST;
+    private static final int REQUEST_CODE_PAYMENT = 1;
+    private ESewaConfiguration eSewaConfiguration;
+
+    private static final String MERCHANT_ID = "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R";
+    private static final String MERCHANT_SECRET_KEY = "BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==";
+
+
+    public FragmentReport() {
+    }
 
     @Nullable
     @Override
@@ -59,6 +77,11 @@ public class FragmentReport extends Fragment {
 //         user2 = i.getStringExtra("user2");
 //         tempAmt = Double.parseDouble(i.getStringExtra("tempAmt"));
 
+
+        eSewaConfiguration = new ESewaConfiguration()
+                .clientId(MERCHANT_ID)
+                .secretKey(MERCHANT_SECRET_KEY)
+                .environment(CONFIG_ENVIRONMENT);
 
 
 //        Intent intent = getActivity().getIntent();
@@ -72,27 +95,58 @@ public class FragmentReport extends Fragment {
 //    currentGroupName = bundle.getString("currentGroupName");
 //    currentGroupID = bundle.getString("currentGroupID");
 
-        System.out.println("Mumy:"+ currentEventID);
+        System.out.println("Mumy:" + currentEventID);
 //        System.out.println("Mumy:"+ currentEventName);
 
-        System.out.println("Mumy:"+ currentGroupID);
+        System.out.println("Mumy:" + currentGroupID);
 
-        System.out.println("Mumy:"+ currentGroupName);
+        System.out.println("Mumy:" + currentGroupName);
 
         getModelReport();
 
 
+        Button button10 = view.findViewById(R.id.button_10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ESewaPayment eSewaPayment = new ESewaPayment("1000",
+                        "Color", "1234", "https://somecallbackurl.com");
+
+                Intent intent = new Intent(getActivity(), ESewaPaymentActivity.class);
+                intent.putExtra(ESewaConfiguration.ESEWA_CONFIGURATION, eSewaConfiguration);
+
+                intent.putExtra(ESewaPayment.ESEWA_PAYMENT, eSewaPayment);
+                startActivityForResult(intent, REQUEST_CODE_PAYMENT);
+            }
+        });
 
 
 //        total.setText(String.valueOf(adapter.getItemCount())); //just to show number
         return view;
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_PAYMENT) {
+            if (resultCode == RESULT_OK) {
+                String s = data.getStringExtra(ESewaPayment.EXTRA_RESULT_MESSAGE);
+                Log.i("Proof of Payment", s);
+                Toast.makeText(context, "SUCCESSFUL PAYMENT", Toast.LENGTH_SHORT).show();
+            } else if (resultCode == RESULT_CANCELED) {
+                Toast.makeText(context, "UNSUCCESSFUL PAYMENT", Toast.LENGTH_SHORT).show();
+
+            } else if (resultCode == ESewaPayment.RESULT_EXTRAS_INVALID) {
+                String s = data.getStringExtra(ESewaPayment.EXTRA_RESULT_MESSAGE);
+                Log.i("Proof of Payment", s);
+            }
+        }
+    }
+
     public void getModelReport() {
 
 
         ArrayList<String> memberList = new ArrayList<>();
-     //   AddTransaction add = new AddTransaction();
         FirebaseDatabase.getInstance().getReference("Groups")
                 .child(currentGroupID).child(currentGroupName).child("Members")
                 .addValueEventListener(new ValueEventListener() {
@@ -110,7 +164,7 @@ public class FragmentReport extends Fragment {
 
                         for (int i = 0; i < a; i++) {
                             String user = memberList.get(i);
-                            System.out.println("user1 : "+user);
+                            System.out.println("user1 : " + user);
                             FirebaseDatabase.getInstance().getReference("TransactionUnequal")
                                     .child(currentGroupID)
                                     .child(currentEventID)
@@ -129,11 +183,11 @@ public class FragmentReport extends Fragment {
                                             amountToGet = Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountToGet").toString());
                                             amountToPay = Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountToPay").toString());
                                             if (amountToPay > 0) {
-                                                tempAmt=amountToPay;
+                                                tempAmt = amountToPay;
                                                 user1 = user;
                                                 for (j = 0; j < a; j++) {
                                                     String subUser = memberList.get(j);
-                                                    System.out.println("subUser: "+ subUser);
+                                                    System.out.println("subUser: " + subUser);
                                                     FirebaseDatabase.getInstance().getReference("TransactionUnequal")
                                                             .child(currentGroupID)
                                                             .child(currentEventID)
@@ -145,8 +199,8 @@ public class FragmentReport extends Fragment {
                                                                     amountInvested1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountInvested").toString());
                                                                     amountToGet1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountToGet").toString());
                                                                     amountToPay1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountToPay").toString());
-                                                                    System.out.println("In :"+amountInvested1);
-                                                                    System.out.println("get:"+ amountToGet1);
+                                                                    System.out.println("In :" + amountInvested1);
+                                                                    System.out.println("get:" + amountToGet1);
 
                                                                     if (user != subUser) {
                                                                         if (amountToGet1 > 0) {
@@ -176,18 +230,18 @@ public class FragmentReport extends Fragment {
 
                                                 }
 
-                                               // System.out.println("temp : " + amountToGet);
+                                                // System.out.println("temp : " + amountToGet);
 
 //                        modelReport.addAll(modelReport1);
 
 
                                             }
                                             if (amountToGet > 0) {
-                                                tempAmt=amountToGet;
+                                                tempAmt = amountToGet;
                                                 user2 = user;
                                                 for (j = 0; j < a; j++) {
                                                     String subUser = memberList.get(j);
-                                                    System.out.println("subUser: "+ subUser);
+                                                    System.out.println("subUser: " + subUser);
                                                     FirebaseDatabase.getInstance().getReference("TransactionUnequal")
                                                             .child(currentGroupID)
                                                             .child(currentEventID)
@@ -199,8 +253,8 @@ public class FragmentReport extends Fragment {
                                                                     amountInvested1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountInvested").toString());
                                                                     amountToGet1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountToGet").toString());
                                                                     amountToPay1 = Double.parseDouble(Objects.requireNonNull(amountDetail1).get("amountToPay").toString());
-                                                                    System.out.println("In :"+amountInvested1);
-                                                                    System.out.println("get:"+ amountToGet1);
+                                                                    System.out.println("In :" + amountInvested1);
+                                                                    System.out.println("get:" + amountToGet1);
 
                                                                     if (user != subUser) {
                                                                         if (amountToPay1 > 0) {
@@ -252,10 +306,59 @@ public class FragmentReport extends Fragment {
                 });
 
 
-        }
-
-
     }
 
+//    public getUser() {
+//        ArrayList<String> memberList = new ArrayList<>();
+//        FirebaseDatabase.getInstance().getReference("Groups")
+//                .child(currentGroupID).child(currentGroupName).child("Members")
+//                .addValueEventListener(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                        ArrayList<String> members = new ArrayList<>();
+//                        for (DataSnapshot snapshot4 : dataSnapshot.getChildren()) {
+//                            members.add(snapshot4.getValue().toString());
+//                            System.out.println("Mem: " + members);
+//                        }
+//                        memberList.addAll(members);
+//                        System.out.println("memList : " + memberList);
+//                        int a = memberList.size();
+//                        System.out.println("three: " + a);
+//
+//                        for (int i = 0; i < a; i++) {
+//                            String user = memberList.get(i);
+//                            System.out.println("user1 : " + user);
+//                            FirebaseDatabase.getInstance().getReference("TransactionUnequal")
+//                                    .child(currentGroupID)
+//                                    .child(currentEventID)
+//                                    .child(user)
+//                                    .addValueEventListener(new ValueEventListener() {
+//
+//                                        @Override
+//                                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//
+//                                            Map<String, Object> amountDetail = (Map<String, Object>) dataSnapshot.getValue();
+//                                            amountToPay = Double.parseDouble(Objects.requireNonNull(amountDetail).get("amountToPay").toString());
+//
+//                                        }
+//
+//                                        @Override
+//                                        public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                                        }
+//                                    });
+//
+//
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//                    }
+//                });
+//        return ;
+//    }
+}
 
 
