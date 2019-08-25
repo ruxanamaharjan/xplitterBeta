@@ -2,6 +2,8 @@ package com.example.x_splitter;
 
 import android.content.Intent;
 import androidx.annotation.NonNull;
+
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +30,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_home);
+
+        Fresco.initialize(this);
 
         fab_add = findViewById(R.id.fab_add);
         fab_add.setOnClickListener(new View.OnClickListener() {

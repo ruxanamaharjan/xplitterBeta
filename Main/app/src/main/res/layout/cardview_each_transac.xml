@@ -31,8 +31,8 @@
             android:layout_height="20dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:background="@color/colorPrimary"
-            app:srcCompat="@drawable/option"/>
+            android:background="@color/Aqua"
+            app:srcCompat="@android:drawable/ic_menu_gallery"/>
 
         <TextView
             android:id="@+id/transac_name"
@@ -62,17 +62,17 @@
             android:textColor="@color/item_fill"
             android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/transac_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Category"
-            android:paddingStart="8dp"
-            android:paddingEnd="0dp"
-            android:paddingBottom="2dp"
-            android:background="@drawable/category"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"/>
+<!--        <TextView-->
+<!--            android:id="@+id/transac_category"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Category"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:paddingEnd="0dp"-->
+<!--            android:paddingBottom="2dp"-->
+<!--            android:background="@drawable/category"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentEnd="true"/>-->
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
